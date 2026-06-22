@@ -1,0 +1,55 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-left { width: 55%; }
+  .mode-landscape .sl-right { width: 45%; }
+  .mode-portrait .sl-left { width: 100%; flex: 1; }
+  .mode-portrait .sl-right { width: 100%; height: 40%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex w-full h-full">
+
+    <!-- Left: content column -->
+    <div class="sl-left bg-slate-900 flex flex-col justify-between p-12">
+
+      <!-- Top: product label -->
+      <div>
+        <span class="inline-flex items-center gap-2 bg-red-600 text-white text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full">
+          YouTube Video App
+        </span>
+      </div>
+
+      <!-- Middle: headline + tagline -->
+      <div class="flex flex-col gap-5">
+        <h1 class="text-5xl font-extrabold text-white leading-tight">
+          Your YouTube,<br />Elevated.
+        </h1>
+        <p class="text-slate-300 text-base leading-relaxed" style="max-width: 22rem;">
+          Discover, watch, and organize YouTube video content in a focused, distraction-free experience — on your terms, not the algorithm's.
+        </p>
+        <div class="flex items-center gap-3 mt-2">
+          <div class="w-8 h-0.5 bg-red-500 rounded-full"></div>
+          <span class="text-slate-500 text-xs tracking-widest uppercase font-medium">Content-First · Intentional · Fast</span>
+        </div>
+      </div>
+
+      <!-- Bottom: attribution -->
+      <div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: hero image -->
+    <div class="sl-right relative overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=person%20relaxing%20on%20a%20sofa%20watching%20videos%20on%20a%20sleek%20modern%20device%2C%20warm%20cinematic%20living%20room%20lighting%2C%20red%20and%20dark%20tones%2C%20calm%20minimal%20aesthetic%2C%20editorial%20photography"
+        alt="YouTube video experience"
+        class="w-full h-full object-cover"
+      />
+      <!-- Left-edge gradient blending into the dark panel -->
+      <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(15,23,42,0.55) 0%, transparent 35%);"></div>
+    </div>
+
+  </div>
+</section>
