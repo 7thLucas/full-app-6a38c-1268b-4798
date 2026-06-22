@@ -1,0 +1,95 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12 gap-5">
+
+    <!-- Header -->
+    <div class="flex items-start justify-between gap-4">
+      <div>
+        <span class="text-xs font-bold tracking-widest uppercase text-red-600">North Star</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-1 leading-tight">
+          The one number that matters.
+        </h2>
+      </div>
+      <span class="shrink-0 bg-amber-100 text-amber-700 text-xs font-bold tracking-wide uppercase px-3 py-1.5 rounded-full border border-amber-200">
+        Projected — based on your inputs
+      </span>
+    </div>
+
+    <!-- Verified operations definition -->
+    <div class="bg-slate-100 rounded-2xl p-5">
+      <p class="text-xs font-bold tracking-widest uppercase text-slate-500 mb-2">Verified Operations — what this app exists to do</p>
+      <div class="flex flex-wrap gap-3">
+        <div class="bg-red-600 text-white text-sm font-semibold px-4 py-1.5 rounded-full">Video Watched</div>
+        <div class="bg-slate-200 text-slate-700 text-sm font-semibold px-4 py-1.5 rounded-full">Video Saved to Playlist</div>
+      </div>
+      <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+        A <strong>Video Watched</strong> is counted when a real user plays a YouTube video to completion (or intentional pause) through the app. A <strong>Video Saved</strong> is counted when a user bookmarks or adds a video to a personal playlist.
+      </p>
+    </div>
+
+    <!-- WVO formula + value derivation -->
+    <div class="grid grid-cols-2 gap-4 flex-1">
+
+      <!-- Weekly Verified Operations formula -->
+      <div class="bg-slate-900 rounded-2xl p-6 flex flex-col gap-4">
+        <p class="text-xs font-bold tracking-widest uppercase text-slate-400">Weekly Verified Operations (WVO)</p>
+
+        <div class="flex flex-col gap-2">
+          <div class="flex items-center gap-2">
+            <span class="bg-amber-500 text-white text-xs font-bold px-2 py-0.5 rounded">Assumption — adjust this</span>
+            <span class="text-slate-300 text-sm">Active users / week</span>
+          </div>
+          <p class="text-white font-bold text-2xl pl-1">[ ___ users ]</p>
+        </div>
+
+        <div class="flex items-center gap-2 text-slate-400 text-sm">
+          <span>×</span>
+          <div class="flex items-center gap-2">
+            <span class="bg-amber-500 text-white text-xs font-bold px-2 py-0.5 rounded">Assumption</span>
+            <span>Videos watched per user per week</span>
+          </div>
+        </div>
+        <p class="text-white font-bold text-2xl pl-1">[ ___ videos ]</p>
+
+        <div class="border-t border-slate-700 pt-3 mt-1">
+          <p class="text-slate-400 text-xs uppercase tracking-widest mb-1">= Weekly Verified Operations</p>
+          <p class="text-red-400 font-extrabold text-3xl">[ ___ ] WVO / week</p>
+        </div>
+      </div>
+
+      <!-- Value & ROI derivation -->
+      <div class="flex flex-col gap-4">
+
+        <div class="bg-red-600 rounded-2xl p-5 flex flex-col gap-2 flex-1">
+          <p class="text-xs font-bold tracking-widest uppercase text-red-200">Value per Operation</p>
+          <p class="text-white text-sm leading-relaxed">
+            Each video watched = time saved hunting for content + distraction avoided.
+          </p>
+          <div class="flex items-center gap-2 mt-1">
+            <span class="bg-amber-500 text-white text-xs font-bold px-2 py-0.5 rounded">Assumption</span>
+            <span class="text-red-100 text-sm">[ ___ min saved ] × user hourly rate</span>
+          </div>
+          <p class="text-white font-bold text-xl mt-1">= $[ ___ ] / operation</p>
+        </div>
+
+        <div class="bg-slate-100 rounded-2xl p-5 flex flex-col gap-2 flex-1">
+          <p class="text-xs font-bold tracking-widest uppercase text-slate-500">Projected Total Impact</p>
+          <div class="flex gap-6 mt-1">
+            <div>
+              <p class="text-slate-500 text-xs uppercase tracking-wider">Per Week</p>
+              <p class="text-slate-900 font-extrabold text-2xl">$[ ___ ]</p>
+            </div>
+            <div>
+              <p class="text-slate-500 text-xs uppercase tracking-wider">Per Year (×52)</p>
+              <p class="text-slate-900 font-extrabold text-2xl">$[ ___ ]</p>
+            </div>
+          </div>
+          <p class="text-slate-500 text-xs mt-2 leading-relaxed">
+            Fill in your assumption values above to generate real projections.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
