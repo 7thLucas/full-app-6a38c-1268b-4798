@@ -1,0 +1,58 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-content { width: 58%; }
+  .mode-landscape .sl-image { width: 42%; }
+  .mode-portrait .sl-content { width: 100%; flex: 1; }
+  .mode-portrait .sl-image { display: none; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex w-full h-full">
+
+    <!-- Content column -->
+    <div class="sl-content flex flex-col justify-center p-12 gap-7">
+
+      <!-- Section label + title -->
+      <div>
+        <span class="text-xs font-bold tracking-widest uppercase text-red-600">Foundation</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-2 leading-tight">
+          The problem.<br />The fix.
+        </h2>
+      </div>
+
+      <!-- Problem card -->
+      <div class="rounded-2xl p-6 border-l-4 border-red-600 bg-slate-100">
+        <p class="text-xs font-bold tracking-widest uppercase text-red-600 mb-2">The Problem</p>
+        <p class="text-slate-900 font-semibold text-base leading-snug mb-2">
+          YouTube is engineered to keep you scrolling — not to help you find what you actually want.
+        </p>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Cluttered feeds, aggressive autoplay, and algorithmic rabbit holes make intentional viewing nearly impossible. Users lose hours to content they never chose.
+        </p>
+      </div>
+
+      <!-- Solution card -->
+      <div class="rounded-2xl p-6 bg-red-600">
+        <p class="text-xs font-bold tracking-widest uppercase text-red-200 mb-2">The Solution</p>
+        <p class="text-white font-semibold text-base leading-snug mb-2">
+          A focused YouTube video app that puts the viewer back in control.
+        </p>
+        <p class="text-red-100 text-sm leading-relaxed">
+          Clean playback, intentional discovery, and personal curation — so users watch what they came to watch, save what matters, and leave when they're done.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Image column -->
+    <div class="sl-image relative overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=split%20visual%20contrasting%20chaotic%20overwhelming%20social%20media%20feed%20on%20left%20with%20calm%20minimal%20clean%20video%20player%20interface%20on%20right%2C%20editorial%20style%2C%20dark%20tones%2C%20cinematic"
+        alt="Problem vs solution contrast"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+  </div>
+</section>
